@@ -110,8 +110,7 @@ export const deleteReview = async (req, res, next) => {
     if (!review) {
       throwError(404, "Review not found");
     }
-    
-    
+
 
     if (review.user.toString() !== req.user._id.toString()) {
       throwError(403, "Unauthorized to delete this review");

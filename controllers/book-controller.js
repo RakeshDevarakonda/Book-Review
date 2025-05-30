@@ -30,7 +30,6 @@ export const addBook = async (req, res, next) => {
     }
 
     
-
     const bookData = {
       title: title.trim(),
       author: author.trim(),

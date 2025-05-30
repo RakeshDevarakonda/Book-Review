@@ -8,6 +8,7 @@ const generateToken = (userId) => {
 };
 
 
+
 export const signup = async (req, res, next) => {
   try {
     const { name, email, password, confirmPassword } = req.body;
