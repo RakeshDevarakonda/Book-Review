@@ -7,6 +7,7 @@ const generateToken = (userId) => {
   return jwt.sign({ id: userId }, process.env.JWT_SECRET, { expiresIn: "7d" });
 };
 
+
 export const signup = async (req, res, next) => {
   try {
     const { name, email, password, confirmPassword } = req.body;

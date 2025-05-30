@@ -29,6 +29,7 @@ export const addBook = async (req, res, next) => {
       throwError(400, errors.join(", "));
     }
 
+    
 
     const bookData = {
       title: title.trim(),
